@@ -7,3 +7,6 @@ class Empresa(models.Model):
         help_text='nome da empresa'	
     )
 
+    def __str__(self):
+        return self.nome
+
