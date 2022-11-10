@@ -15,9 +15,10 @@ class Funcionario(models.Model):
         on_delete=models.PROTECT,
        
     )
-
+    #Lista de departamentos
     departamentos = models.ManyToManyField(Departamento)
-
+    #empresa a qual o funcionario pertence
+    
     empresa = models.ForeignKey(
         Empresa,
         on_delete=models.PROTECT,

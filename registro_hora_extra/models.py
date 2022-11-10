@@ -5,6 +5,7 @@ class RegistroHoraExtra(models.Model):
     motivo = models.CharField(
         max_length=100,
     )
+    #funcionario com registro de hora extra
     funcionario = models.ForeignKey(
         Funcionario,
         on_delete=models.PROTECT
