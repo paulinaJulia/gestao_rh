@@ -13,6 +13,8 @@ class Funcionario(models.Model):
     user = models.OneToOneField(
         User,
         on_delete=models.PROTECT,
+        blank=True,
+        null=True
        
     )
     #Lista de departamentos
